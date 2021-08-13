@@ -1,9 +1,9 @@
-from django.urls import path
-# from .views import PostList, PostDetail
 
-app_name = 'facts_api'
+from django.urls import path
+from django.views.generic import TemplateView
+
+app_name = 'blog'
 
 urlpatterns = [
-    # path('<int:pk>/', PostDetail.as_view(), name='detailcreate'),
-    # path('', PostList.as_view(), name='listcreate'),
+    path('', TemplateView.as_view(template_name="facts/index.html")),
 ]

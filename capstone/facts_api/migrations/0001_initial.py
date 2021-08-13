@@ -12,13 +12,13 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.CreateModel(
-            name='Category',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-            ],
-        ),
+        # migrations.CreateModel(
+        #     name='Category',
+        #     fields=[
+        #         ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        #         ('name', models.CharField(max_length=100)),
+        #     ],
+        # ),
         migrations.CreateModel(
             name='Place',
             fields=[
@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
                 ('coord_h', models.FloatField()),
                 ('is_liked', models.BooleanField(default=False)),
                 ('has_viewed', models.BooleanField(default=False)),
-                ('category', models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='home.category')),
+                # ('category', models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='home.category')),
             ],
         ),
     ]
