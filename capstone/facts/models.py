@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class Place(models.Model):
     CATEGORY_CHOICES = ('SPORTS', 'SPORTS'),('INVENTIONS', 'INVENTIONS'),('MUSIC', 'MUSIC'),('STEM', 'STEM'), ('POLITICS','POLITICS'), ('LITERATURE','LITERATURE'),('ART', 'ART'),('FASHION','FASHION'), ('EMPIRES', 'EMPIRES')
     category = models.CharField(choices=CATEGORY_CHOICES, max_length=50)
-    title = models.CharField(max_length=32)
+    title = models.TextField()
     description = models.TextField()
     year = models.IntegerField()
     coord_v = models.FloatField()
