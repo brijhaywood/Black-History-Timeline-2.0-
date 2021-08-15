@@ -8,9 +8,13 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'capstone.settings')
 
 application = get_wsgi_application()
+
+sys.path.append('/Users/briyanahaywood/Developer/projects/Black-History-Timeline-2.0/capstone')
+sys.path.append('/Users/briyanahaywood/Developer/projects/Black-History-Timeline-2.0/capstone/capstone')
