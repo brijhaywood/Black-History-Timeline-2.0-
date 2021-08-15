@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%r+(((@-y#^axond0s+$%2e8v=xte=fd_w1_f8=7n$%1o7p#=v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://capstone-timeline-backend.herokuapp.com/', 'http://localhost:8000/', '127.0.0.1:8000/']
 
 
 # Application definition
