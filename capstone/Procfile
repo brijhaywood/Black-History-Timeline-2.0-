@@ -1,2 +1,2 @@
-web: gunicorn capstone.wsgi --log-file-
+web: gunicorn 'app:create_app()'
 
